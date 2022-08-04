@@ -18,14 +18,14 @@ export default (state, action) => {
           if (p.id === action.payload.id) {
             p.items++;
           }
-          //second time cart mein item + hoti ha
+         
           // console.log("Cart ", p);
           // console.log(state)
           return p;
         });
       } else {
         cart = [...state.cart, action.payload];
-        //first time cart mein item chali gai ha
+      
         // console.log("Cart ", cart);
         // console.log("Cart id ", action.payload);
       }
